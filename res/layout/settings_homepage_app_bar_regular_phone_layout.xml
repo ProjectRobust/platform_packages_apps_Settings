@@ -17,10 +17,16 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#494949"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp">
     <ImageView
         android:id="@+id/account_avatar"
         android:layout_width="@dimen/avatar_length"
@@ -32,10 +38,21 @@
         android:accessibilityTraversalAfter="@id/homepage_title"
         android:contentDescription="@string/search_bar_account_avatar_content_description"/>
 
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#494949"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp">
+
     <TextView
         android:id="@+id/homepage_title"
         android:text="@string/settings_label"
         style="@style/HomepageTitleText"/>
+
+</androidx.cardview.widget.CardView>
 
     <FrameLayout
         android:id="@+id/suggestion_content"

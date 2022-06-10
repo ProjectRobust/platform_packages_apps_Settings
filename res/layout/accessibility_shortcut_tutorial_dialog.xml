@@ -22,11 +22,17 @@
     android:textDirection="locale"
     android:scrollbarStyle="outsideOverlay">
 
+     <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#494949"
+        android:padding="24dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        >
 
         <TextSwitcher
             android:id="@+id/title"
@@ -54,5 +60,7 @@
             android:layout_marginTop="16dp"
             android:measureAllChildren="false" />
     </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </ScrollView>
